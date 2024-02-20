@@ -10,7 +10,6 @@ localStorage, making it a client-side solution.
 - Add a new contact
 - Edit an existing contact
 - Delete a contact
-- Search through contacts
 
 ## Getting Started
 

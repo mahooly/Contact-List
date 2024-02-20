@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import {useNavigate} from "react-router-dom";
+import "../styles/form.scss";
 
 const ContactForm = ({initialContact, errors, setErrors, onSubmit, buttonText, isEditable}) => {
     const [contact, setContact] = useState(initialContact || {
@@ -66,7 +67,7 @@ const ContactForm = ({initialContact, errors, setErrors, onSubmit, buttonText, i
                     id="email"
                     name="email"
                     type="email"
-                    className="form-control"
+                    className={`form-control ${isEditable ? '' : 'read-only-input'}`}
                     value={contact.email}
                     onChange={handleChange}
                     readOnly={!isEditable}

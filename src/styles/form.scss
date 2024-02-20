@@ -42,3 +42,9 @@ textarea.form-control {
 .error {
   color: #dc3545;
 }
+
+.read-only-input {
+  background-color: #e9ecef !important;
+  color: #6c757d !important;
+  pointer-events: none;
+}

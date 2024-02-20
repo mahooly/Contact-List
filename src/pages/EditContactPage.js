@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 import {useNavigate, useParams} from 'react-router-dom';
-import "../styles/form.scss";
 import ContactForm from "../components/ContactForm";
 
 const EditContactPage = () => {
@@ -24,7 +23,7 @@ const EditContactPage = () => {
                 <div className="col-lg-6">
                     <div className="card shadow">
                         <div className="card-body">
-                            <h3 className="text-center mb-4">Add Contact</h3>
+                            <h3 className="text-center mb-4">Edit Contact</h3>
                             <ContactForm
                                 initialContact={contact}
                                 errors={errors}
